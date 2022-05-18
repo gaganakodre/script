@@ -1,15 +1,22 @@
 #!/bin/bash -x
 
 employepresent=1;
-randomCheck=$((RANDOM%2));
+employeeinpartime=2;
+empperHr=20;
+
+randomCheck=$((RANDOM%3));
 
 if [ $employepresent -eq $randomCheck ];
 then
-	empRateperHr=20;
 	empHrs=8;
-	salary=$(( $empRateperHr *  $empHrs ));
 	echo "employee is present";
-else
-	salary=0;
-	echo "employee is absent";
+elif  [ $employepresent -eq $randomCheck ];
+
+	 empHrs=8;
+	  echo "employee is partimer";
+else 
+	 empHrs=0;
+	 echo "employee is absent";
+
 fi
+	 salary=$(( $empRateperHr *  $empHrs ));
