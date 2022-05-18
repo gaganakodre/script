@@ -1,3 +1,3 @@
-hello in master
+haha hello in master git
 hello in first branch
 hrllo in secondbranch
